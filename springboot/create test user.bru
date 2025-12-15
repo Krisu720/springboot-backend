@@ -1,15 +1,11 @@
 meta {
-  name: create test user
+  name: Create Test User
   type: http
-  seq: 1
+  seq: 2
 }
 
 post {
   url: http://localhost:8080/api/test/create-test-user
   body: none
-  auth: inherit
-}
-
-settings {
-  encodeUrl: false
+  auth: none
 }

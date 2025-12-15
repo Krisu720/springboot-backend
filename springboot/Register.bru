@@ -1,0 +1,25 @@
+meta {
+  name: Register
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "jan",
+    "password": "admin123",
+    "email": "jan@example.com",
+    "phone": "123456789",
+    "firstName": "Jan",
+    "lastName": "Kowalski",
+    "hourlyRate": 30.00,
+    "role": "USER"
+  }
+}
+
